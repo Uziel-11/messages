@@ -24,4 +24,9 @@ public class messageController {
         return messageService.recibirNombre(nombre);
     }
 
+    @GetMapping(path = "/apellido")
+    public String apellido(@RequestParam String apellido){
+        return "Tu apellido es "+ apellido +"?";
+    }
+
 }
