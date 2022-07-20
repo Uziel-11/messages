@@ -29,4 +29,9 @@ public class messageController {
         return "Tu apellido es "+ apellido +"?";
     }
 
+    @GetMapping(path = "/id")
+    public String ids(@RequestParam String id){
+        return "Tu id es: " + id;
+    }
+
 }
